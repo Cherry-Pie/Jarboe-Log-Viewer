@@ -1,0 +1,38 @@
+{
+  "name": "yaro/jarboe-log-viewer",
+  "type": "library",
+  "description": "Logs viewer for Jarboe admin panel",
+  "homepage": "https://jarboe.app",
+  "keywords": [
+    "jarboe",
+    "laravel",
+    "log viewer",
+    "logs"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yaro",
+      "email": "12fcv4@gmail.com"
+    }
+  ],
+  "require": {
+    "arcanedev/log-viewer": "^4.5|^5.0|^7.0",
+    "yaro/jarboe": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Yaro\\JarboeLogViewer\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Yaro\\JarboeLogViewer\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
