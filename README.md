@@ -44,6 +44,18 @@ return [
 ];
 ```
 
+Optionally, add url to log viewer page in navigation sidebar:
+```html
+<!-- resources/views/vendor/jarboe/inc/navigation.blade.php -->
+
+<li>
+    <a href="{{ route('log-viewer::dashboard') }}">
+        <i class="fa fa-lg fa-fw fa-exclamation-triangle"></i>
+        <span class="menu-item-parent">Logs</span>
+    </a>
+</li>
+```
+
 ## Usage
 
 Logs can be viewed on `log-viewer` under your admin panel prefix, by default it will be `http://localhost/admin/log-viewer`.
